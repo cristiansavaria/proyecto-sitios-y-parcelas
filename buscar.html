@@ -1,70 +1,87 @@
+
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
-    <title>Title</title>
+    <title>Buscar</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="estilos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos.css/estilos.css">
+
 </head>
   <body>
-
-    <ul class="barraizquierda">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Buscar</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Acerca de</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Contacto</a>
-      </li>
-    </ul>
-
-  
-
-    <div class="row no-gutters position-relative">
-      <div class="col-md-6 mb-md-0 p-md-4">
-        <img src="imagenes/img.jpg" class="w-100" alt="...">
-      </div>
-      <div class="col-md-6 position-static p-4 pl-md-0">
-        <h1 class="display-3 mt-0">Sitios y Parcelas</h1>
-      </div>
+    <div class="sidebar">
+      <a class="active" href="index.html">Inicio</a>
+      <a href="buscar.html">Buscar</a>
+      <a href="acerca_de.html">Acerca de</a>
+      <a href="contacto.html">Contacto</a>
     </div>
-    <div class="container">
-      <div class="inicio">
-        <h2>Buscar</h2>
-        <section>
-            <div class="regioncomuna">
-              <select name="regiones" id="regiones">
-                <option value="--Seleccione una Región--">--Seleccione una Región--</option>
-                <option value="Metropolitana">Metropolitana</option>
-                <option value="Araucania">Araucania</option>
-                  <option value="Los lagos">Los lagos</option>
-              </select>
-              <select name="regiones" id="regiones">
-                <option value="--Seleccione una Comuna--">--Seleccione una Comuna--</option>
-                <option value="La Cisterna">La Cisterna</option>
-                  <option value="La Florida">La Florida</option>
-                  <option value="San Miguel">San Miguel</option>
+      
 
-              </select>
-            </div>
-            <div class="enviar">
-            <input type="submit" value="Enviar">
-            </div>
-        </section>
-      </div> 
-    </div>
+      <div class="container">
+        <div class="jumbotron mt-5">
     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+          <h1 class="titulo">Sitios y <span>Parcelas</span></h1>
+    
+    
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="jumbotron mt-5 ">
+          <h1 class="paginacion">Buscar</h1>
+    
+    
+    
+          <div class="container col-6">
+            
+            
+            <form >
+              <div class="form-group">
+                
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>--Seleccione una Región--</option>
+                  <option>Metropolitana de Santiago</option>
+                  <option>Magallanes</option>
+                  <option>O’Higgins</option>
+                </select>
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>--Seleccione Comuna--</option>
+                  <option>Santiago</option>
+                  <option>Laguna Blanca</option>
+                  <option>Villa O'Higgins.</option>
+                </select>
+              </div>
+              <a href="resultado_buscar.html"><button   type="submit " class="btn  btn-dark">Buscar</button></a>
+              
+            </form>
+    
+            
+          </div>
+    
+    
+    
+    
+    
+        </div>
+      </div>
+    
+     
+    
+      <div class="container">
+        <div class="jumbotron mt-5 text-center" style="margin-bottom:0">
+          <p>Siguenos en Nuestras Redes Sociales:</p>
+  
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div> 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
