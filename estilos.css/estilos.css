@@ -1,3 +1,9 @@
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -262,4 +268,19 @@ input[type=submit]:hover {
 
 #imagenportada{
   width: 300px;
+}
+
+
+
+.responsive {
+  width: auto;
+  height: auto;
+}
+
+
+
+
+#imagenresultado{
+  width: 100%;
+  height: auto;
 }
